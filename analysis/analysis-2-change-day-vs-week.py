@@ -1,6 +1,7 @@
 import plotly.plotly as py
 import plotly.graph_objs as go
 import coinmarketcap
+import styles
 
 data = coinmarketcap.retrieve_data()
 series = [(d["percent_change_24h"], d["percent_change_7d"], d["symbol"]) for d in data if d["percent_change_24h"] != None and d["percent_change_7d"] != None and int(d["rank"]) < 50]
@@ -12,7 +13,7 @@ trace0 = go.Scatter(
     mode = 'markers+text',
     name = 'Symbols',
     text = z,
-    marker = dict(size=14,line=dict(width=1,color='rgba(0,0,0,.8)'), color='rgba(0,0,0,.2)'),
+    marker = styles.marker_open_circle,
     textposition='top'
 )
 
