@@ -1,3 +1,3 @@
-cd analysis
-python analysis-1-change-hour-vs-day.py
-python analysis-2-change-day-vs-week.py
+D:
+cd Repos/CryptoAnalysis/crypto-analysis/analysis
+python percentage_change_charts.py

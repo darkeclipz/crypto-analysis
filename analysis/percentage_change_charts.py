@@ -2,6 +2,7 @@ import plotly.plotly as py
 import plotly.graph_objs as go
 import coinmarketcap
 import styles
+import sys
 
 def create_change_in_percentage_chart(data, name, labelx, labely, title, titlex, titley, limit):
     print('Creating plot...')
@@ -67,7 +68,7 @@ def create_change_in_percentage_chart(data, name, labelx, labely, title, titlex,
     py.plot(fig, filename=name, auto_open=False)
 
 print('Retrieving data...')
-limit = 100
+limit = 50
 data = coinmarketcap.retrieve_data()
-create_change_in_percentage_chart(data, 'cbct50', 'percent_change_1h', 'percent_change_24h', 'Change in % by Top '+str(limit)+' Coins (1H/24H)', '% Change (1H)', '% Change (24H)', limit)
-create_change_in_percentage_chart(data, 'cbc2t50', 'percent_change_24h', 'percent_change_7d', 'Change in % by Top '+str(limit)+' Coins (24H/7D)', '% Change (24H)', '% Change (7D)', limit)
+create_change_in_percentage_chart(data, 'cbct50', 'percent_change_1h', 'percent_change_24h', 'Change in % by Top 50 Coins (1H/24H)', '% Change (1H)', '% Change (24H)', limit)
+create_change_in_percentage_chart(data, 'cbc2t50', 'percent_change_24h', 'percent_change_7d', 'Change in % by Top 50 Coins (24H/7D)', '% Change (24H)', '% Change (7D)', limit)
