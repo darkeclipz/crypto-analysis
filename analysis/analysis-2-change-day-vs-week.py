@@ -23,7 +23,8 @@ trace0 = go.Scatter(
 data = [trace0]
 
 layout = go.Layout(
-    title = 'Change in % by Coin (top: 50)',
+    title = 'Change in % by Top 50 Coins (Day/Week)',
+    titlefont = dict(size=28),
     hovermode='closest',
     xaxis=dict(
         title='% Change (24-hours)'
