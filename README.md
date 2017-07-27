@@ -16,8 +16,8 @@ To use the scripts, set up plotly with your API key. Then run all the scripts in
 
 ## Data
 Using data from publicly available API's:
-* coinmarketcap.com
-* poloniex.com
+* <http://www.coinmarketcap.com>
+* <http://www.poloniex.com>
 
 ## License
 MIT
