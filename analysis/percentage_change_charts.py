@@ -1,4 +1,4 @@
-import plotly.plotly as py
+import plotly
 import plotly.graph_objs as go
 import styles
 import sys
@@ -64,5 +64,6 @@ def create_change_in_percentage_chart(data, name, labelx, labely, title, titlex,
     #py.image.save_as(fig, filename='plot.png')
 
     print('Uploading plot...')
-    py.plot(fig, filename=name, auto_open=False)
+    #py.plot(fig, filename=name, auto_open=False)
+    return plotly.offline.plot(data, include_plotlyjs=False, output_type='div')
 
