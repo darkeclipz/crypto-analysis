@@ -31,4 +31,3 @@ f = open('index.html', 'w')
 f.write(template)
 f.close()
 
-print('Done :-)')
