@@ -1,1 +1,1 @@
-python3 '/home/ubuntu/crypto-analysis/run.py'
+python3 '/home/ubuntu/hosting/crypto-analysis/run.py'
