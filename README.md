@@ -10,7 +10,7 @@ The result can be seen at <https://darkeclipz.github.io/crypto-analysis/>.
 4. Set up the Plotly API key `plotly.tools.set_credentials_file(username='DemoAccount', api_key='lr1c37zw81')`.
 
 ## Usage
-Execute `run.py` to generate the plots, the result can be found in the `index.html` file. It is generate from the `template.html` file. 
+Execute `run.py` to generate the plots, the result can be found in the `index.html` file. It is generated from the `template.html` file. 
 
 ## Hosting
 Currently the website is hosted at this GitHub. A Linux VPS is updating the `index.html` file every five minutes and pushes the changes to GitHub.
