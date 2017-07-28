@@ -27,6 +27,8 @@ template = template.replace('{{Plot2}}', plot2)
 template = template.replace('{{Plot2_Update}}', datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
 # Write to file
-print(template)
+f = open('index.html', 'w')
+f.write(template)
+f.close()
 
 print('Done :-)')
