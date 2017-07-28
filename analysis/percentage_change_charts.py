@@ -50,7 +50,7 @@ def create_change_in_percentage_chart(data, name, labelx, labely, title, titlex,
     layout = go.Layout(
         title = title,
         titlefont = dict(size=28),
-        hovermode='closest',
+        hovermode='closest',        
         xaxis=dict(
             title=titlex
         ),
@@ -65,5 +65,5 @@ def create_change_in_percentage_chart(data, name, labelx, labely, title, titlex,
 
     print('Uploading plot...')
     #py.plot(fig, filename=name, auto_open=False)
-    return plotly.offline.plot(data, include_plotlyjs=False, output_type='div')
+    return plotly.offline.plot(fig, include_plotlyjs=False, output_type='div').replace(', {"linkText": "Export to plot.ly", "showLink": true}', '')
 
