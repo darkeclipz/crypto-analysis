@@ -8,7 +8,7 @@ The result can be seen at <https://darkeclipz.github.io/crypto-analysis/>.
 
 1. Clone the project `git clone https://github.com/darkeclipz/crypto-analysis`
 2. Install Python 3.x
-3. Install required libraries (requests, plotly)
+3. Install required libraries (`requests`, `plotly`)
 4. Set up the Plotly API key `plotly.tools.set_credentials_file(username='DemoAccount', api_key='lr1c37zw81')`.
 
 ## Usage
